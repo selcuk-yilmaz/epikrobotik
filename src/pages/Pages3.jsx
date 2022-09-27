@@ -35,7 +35,7 @@ const Pages3 = () => {
       });
   };
   useEffect(() => {
-    // pulls();
+    pulls();
   }, []);
 
   // const handleClick = () => {
