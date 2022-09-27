@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+.sidebar {
+  border-right: 1px solid#0D6EFD;
+  /* height: calc(100vh - 55px); */
+  position: fixed;
+  width: 200px;
+  /* padding: 1rem; */
+  font-size: 2rem;
+  
+}
+.sidebar-link{
+  text-decoration: none;
+  margin: 0 ;
+  display: block;
+  padding: 10px;
+
+}
+.sidebar-link:hover{
+  background-color:#0D6EFD;
+  color: white;
+
+
+}
