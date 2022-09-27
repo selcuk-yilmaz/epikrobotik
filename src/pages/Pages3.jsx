@@ -3,7 +3,7 @@ import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Loading from "./Loading";
-import { Link } from "react-router-dom";
+
 import Card from "./Card";
 const Pages3 = () => {
   const [info, setInfo] = useState();

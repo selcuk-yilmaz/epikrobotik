@@ -32,11 +32,11 @@ const UserContextProvider = ({ children }) => {
   //     .then((data) => setUsers(data));
   // }, []);
 
-  const changeWidth = (id, width) => {
-    setUsers(
-      users.map((user) => (user.id === id ? { ...user, width: width } : user))
-    );
-  };
+  // const changeWidth = (id, width) => {
+  //   setUsers(
+  //     users.map((user) => (user.id === id ? { ...user, width: width } : user))
+  //   );
+  // };
   const values = { users, setUsers,tasks,setTasks };
 
   return <UserContext.Provider value={values}>{children}</UserContext.Provider>;
