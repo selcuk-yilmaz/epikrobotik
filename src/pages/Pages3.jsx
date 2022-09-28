@@ -4,7 +4,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Loading from "./Loading";
 
-import Card from "./Card";
+import Card from "../components/Card";
 const Pages3 = () => {
   const [info, setInfo] = useState();
   const [loading, setLoading] = useState(true);
@@ -38,9 +38,6 @@ const Pages3 = () => {
     pulls();
   }, []);
 
-  // const handleClick = () => {
-  //   pulls();
-  // };
   console.log(info);
 
   return (
