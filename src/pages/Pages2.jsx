@@ -31,7 +31,7 @@ const Pages2 = () => {
         </div>
         <div className="main col-9 my-4">
           <div>
-            <h2>Update</h2>
+            <h2 style={{marginTop:"55px"}}>Update</h2>
 
             <form onSubmit={handlesubmit}>
               <fieldset>

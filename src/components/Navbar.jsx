@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
+    <div className="position-fixed w-100 " style={{zIndex:"3"}}>
     <nav className=" navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container ">
         <a className="navbar-brand " href="#">
@@ -48,6 +49,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </div>
   );
 };
 
