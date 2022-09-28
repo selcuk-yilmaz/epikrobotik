@@ -28,22 +28,12 @@ const UserContextProvider = ({ children }) => {
      localStorage.setItem("tasks", JSON.stringify(tasks));
    }, [tasks]);
 
-  // const [users, setUsers] = useState(data );
+ 
 
 
 console.log(tasks)
-  // useEffect(() => {
-  //   fetch("https://api.github.com/users")
-  //     .then((res) => res.json())
-  //     .then((data) => setUsers(data));
-  // }, []);
 
-  // const changeWidth = (id, width) => {
-  //   setUsers(
-  //     users.map((user) => (user.id === id ? { ...user, width: width } : user))
-  //   );
-  // };
-  const values = { tasks,setTasks };
+const values = { tasks,setTasks };
 
   return <UserContext.Provider value={values}>{children}</UserContext.Provider>;
 };

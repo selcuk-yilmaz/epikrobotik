@@ -49,11 +49,11 @@ const Pages3 = () => {
       ) : (
         <>
           <div className=" ">
-            <div class="row">
-              <div class="col-3">
+            <div className="row">
+              <div className="col-3">
                 <SideBar />
               </div>
-              <div class="main container my-5 col-9">
+              <div className="main container my-5 col-9">
                 {info?.map((film) => (
                   <Card key={film.id} {...film} />
                 ))}

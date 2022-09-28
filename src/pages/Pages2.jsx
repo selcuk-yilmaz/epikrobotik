@@ -23,6 +23,7 @@ const Pages2 = () => {
     setDesc("");
     navigate("/");
   };
+  console.log(tasks)
   return (
     <div className="">
       <div className="row">
