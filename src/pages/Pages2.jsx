@@ -29,7 +29,7 @@ const Pages2 = () => {
         <div className="col-3">
           <SideBar fieldset />
         </div>
-        <div className="col-9 my-4">
+        <div className="main col-9 my-4">
           <div>
             <h2>Update</h2>
 

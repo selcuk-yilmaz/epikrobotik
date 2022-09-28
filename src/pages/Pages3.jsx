@@ -2,13 +2,13 @@ import SideBar from "../components/SideBar";
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import Loading from "./Loading";
+import Loading from "../components/Loading";
 
 import Card from "../components/Card";
 const Pages3 = () => {
   const [info, setInfo] = useState();
   const [loading, setLoading] = useState(true);
-  // const url = "https://randomuser.me/api/";
+  
 
   const pulls = async () => {
     const options = {
@@ -53,7 +53,7 @@ const Pages3 = () => {
               <div class="col-3">
                 <SideBar />
               </div>
-              <div class="container my-5 col-9">
+              <div class="main container my-5 col-9">
                 {info?.map((film) => (
                   <Card key={film.id} {...film} />
                 ))}

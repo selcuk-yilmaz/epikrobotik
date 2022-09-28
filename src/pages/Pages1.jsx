@@ -13,7 +13,7 @@ const Pages1 = () => {
           <div className="col-3">
             <SideBar />
           </div>
-          <div className="col-9">
+          <div className="main col-9" >
             <div>
               <h3 className="my-3">{tasks.title}</h3>
               <img className="mb-5" src={tasks.imageUrl} alt="" />
