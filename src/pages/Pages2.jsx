@@ -4,11 +4,11 @@ import { useUserContext } from "../contexts/UserContextProvider";
 import SideBar from "../components/SideBar";
 
 const Pages2 = () => {
-  const { users, setUsers,tasks,setTasks} = useUserContext();
+  const { tasks, setTasks } = useUserContext();
   const navigate = useNavigate();
-  const [title, setTitle] = useState(users.title)
-  const [imageUrl, setImageUrl] = useState(users.imageUrl);
-  const [desc, setDesc] = useState(users.desc)
+  const [title, setTitle] = useState(tasks.title);
+  const [imageUrl, setImageUrl] = useState(tasks.imageUrl);
+  const [desc, setDesc] = useState(tasks.desc);
 
   const handlesubmit = (e) => {
     e.preventDefault();
@@ -17,13 +17,7 @@ const Pages2 = () => {
       imageUrl: imageUrl,
       desc: desc,
     };
-    setTasks([...tasks, newform]);
-    setUsers({
-    title: title,
-    imageUrl:imageUrl,
-    desc:desc,
-    } 
-    );
+    setTasks(newform);
     setTitle("");
     setImageUrl("");
     setDesc("");
@@ -31,11 +25,11 @@ const Pages2 = () => {
   };
   return (
     <div className="">
-      <div class="row">
-        <div class="col-3">
+      <div className="row">
+        <div className="col-3">
           <SideBar fieldset />
         </div>
-        <div class="col-9 my-4">
+        <div className="col-9 my-4">
           <div>
             <h2>Update</h2>
 
