@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const defaultImage =
-  "https://images.unsplash.com/photo-1581905764498-f1b60bae941a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80";
+// const defaultImage =
+//   "https://images.unsplash.com/photo-1581905764498-f1b60bae941a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80";
 const Card = ({ body, head, link, publishDateTime, image }) => {
   // const Card = ({ id, l, q, qid, i, s, rank, v }) => {
   console.log(body);
